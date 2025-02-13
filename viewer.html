@@ -174,7 +174,7 @@
             CLIP_PLAYING = clip
 
             player.pause()
-            player.src = getClipStreamURL(clip)
+            player.src = await getClipStreamURL(clip)
             player.play()
             if (SHOW_CLIP_CREATORS.toLowerCase() == "true") {
                 let date = new Date(clip.created_at)
